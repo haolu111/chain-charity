@@ -1,7 +1,7 @@
 # chain-charity
 chain-charity是一个基于Spring Boot和Fisco区块链的公益项目系统，旨在通过区块链技术提高公益活动的透明度和信任度。系统允许用户注册、登录、参与公益项目捐款，同时通过区块链技术追踪捐款的使用情况。
 ## 安装环境要求
-操作系统：支持Linux和Windows操作系统。
+操作系统：支持Linux和Windows操作系统。\\
 
 JDK：JDK 1.8 或更高版本。
 数据库：MySQL 5.7 或更高版本。
