@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>慈缘心链-爱心公益网</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/bt3.7.css?1">
+    <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+    <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+
+    <link rel="shortcut icon" href="https://cdn.vipcom.cc./image/czdywzs.png" type="image/x-icon" />
+
+    <script src="./js/lang.js?31"></script>
+    <script src="./js/jquery-1.11.3.min.js?31"></script>
+    <style>
+        /* CSS样式表 */
+        a.btn.gradient-bg:active {
+            color: cyan; /* 设置点击时的颜色为青色 */
+        }
+    </style>
+
+</head>
+<header class="site-header">
+    <div class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bggdcc" style="background-color:rgb(161, 216, 230);background-image: linear-gradient(to right top, #6bd17d, #85d67b, #9dda7b, #b2de7c, #c7e27f, #c5e787, #c2eb90, #c0f099, #a6f5ad, #8df8c3, #74fada, #5ffbf1);;background-size:auto;">
+        <div class="container">
+            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                    <div class="header-bar-email" style="color: black;">
+                        电子邮箱：<a href="#" style="color: black;">3181289794@qq.com</a>
+                    </div><!-- .header-bar-email -->
+                    <div class="header-bar-text" style="color: black;">
+                        <p> 捐助热线：<span style="color: black;">19031528955</span></p>
+                    </div><!-- .header-bar-text -->
+                </div><!-- .col -->
+                <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                    <!-- 检查session是否有user -->
+                    <!-- 有就显示用户+注销 否则显示登录和注册 -->
+                    <div class="donate-btn" id="div_userInfo" style="margin-left: 2px;display: none">
+    							<span>
+    								<img alt="" style="cursor: pointer;" src="images/testimonial-1.jpg" onclick="changeAvatar()" id="t_img">
+    								<input type="file" style="display: none;" id="edit_pIcon" onchange="upload(this,'pIcon')">
+                                    <input type="hidden" id="pIcon">
+    								<a href="profile.html" id="a_username">Jenifer Smith</a>
+    							</span>
+                    </div>
+                    <div class="donate-btn" id="div_logout" style="margin-left: 2px;display: none">
+                        <a href="#">注销</a>
+                    </div>
+                    <div class="donate-btn" id="div_login" style="margin-left: 2px;">
+                        <a href="login.html">登录</a>
+                    </div>
+                    <div class="donate-btn" id="div_register" style="margin-left: 2px;">
+                        <a href="register.html">注册</a>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .top-header-bar -->
+
+    <!--            <div class="nav-bar">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="site-branding d-flex align-items-center">
+                    <a class="d-block" href="index.html" rel="home"><p>慈缘心链</p></a>
+                </div><!-- .site-branding -->
+
+                <nav class="site-navigation d-flex justify-content-end align-items-center">
+                    <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                        <li class="current-menu-item"><a href="index.html">首页</a></li>
+                        <li><a href="portfolio.html">相册</a></li>
+                        <li><a href="allCauses.html">慈善项目</a></li>
+                        <li><a href="about.html">成为志愿者</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="causes.html">捐赠情况</a></li>
+                    </ul>
+                </nav><!-- .site-navigation -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</header><!-- .site-header -->
+
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>捐助项目</h1>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .page-header -->
+
+<div class="highlighted-cause">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7 order-2 order-lg-1">
+                <div class="section-heading">
+                    <h2 class="entry-title" id="entry-title">“去远方”</h2>
+                </div><!-- .section-heading -->
+                <h3 style="margin-top: 5%;">项目背景：</h3>
+                <div class="entry-content mt-5">
+                    <p id="entry-content">“去远方” 研学旅行项目是上海真爱梦想公益基金会帮助孩子们走出校门，自主探索广阔未知世界的综合实践活动。依托梦想课程《去远方》，引导孩子们通过小组合作，制定旅行方案，掌握基本出行技能。9年来，课程惠及105万名孩子30个省市自治区，1697支研学小队约9000名孩子与老师走出家乡阔步远方，自主探索广阔世界。</p>
+                </div><!-- .entry-content -->
+
+                <div class="fund-raised w-100 mt-5">
+
+
+                    <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="fund-raised-total mt-4">
+                            Raised: <span id="causeRaised"></span>
+                        </div><!-- .fund-raised-total -->
+
+                        <div class="fund-raised-goal mt-4">
+                            Goal: <span id="causeGoal">70000元</span>
+                        </div><!-- .fund-raised-goal -->
+                    </div><!-- .fund-raised-details -->
+                </div><!-- .fund-raised -->
+
+                <div class="entry-footer mt-5">
+                    <input class="btn gradient-bg mt-5"  type="button" onclick="selectBalance()" value="查询当前进度">
+                </div><!-- .entry-footer -->
+                <div class="entry-footer mt-5">
+                    <input class="btn gradient-bg mt-5"  type="button" onclick="gotoBalance()" value="查询资金去向">
+                </div><!-- .entry-footer -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-5 order-1 order-lg-2">
+                <img id="causeImg" src="images/去远方.jpeg" alt="">
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .highlighted-cause -->
+
+<div class="short-content-wrap">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="short-content">
+                    <h3 class="entry-title">项目简介：</h3>
+
+                    <p id="causeSummary">本课程以 PBL（Project-based Learning 项目式学习）的形式展开， 学生将以 4-6 人的小组为单位，做出一份 7 天的外省研学旅行方案（或 1- 2 天的本地研学旅行方案），并进行公众展览、反思进而提升自己的方案。 整个过程引导孩子们了解制定旅行方案所需掌握的各类信息查询、筛选和整 合的方法、锻炼和发展资源协调和问题解决能力，树立勇于面对问题的信 心，在团队协作过程中形成团队意识、增强责任感。</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="short-content">
+                    <h3 class="entry-title">项目目标：</h3>
+
+                    <p id="causeTask">“去远方”项目的意义不仅在于“研学过程”，前期为了实际出行的顺 利而进行的各项准备，更是对资源整合、团队协作、问题解决、思考抉择能力 的极好锻炼。
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a name="donate"></a>
+            <div class="donation-form-wrap">
+                <h2>捐助信息填写</h2>
+                <h4 class="mt-5">捐助金额：</h4>
+
+                <form class="donation-form">
+                    <div class="donate-amount-wrap d-flex flex-wrap align-items-center mt-5">
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="1" />
+                            <span class="donate-amount">1</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="5"  checked="checked" />
+                            <span class="donate-amount">5</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="10" />
+                            <span class="donate-amount">10</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="20" />
+                            <span class="donate-amount">20</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="25"/>
+                            <span class="donate-amount">25</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="50" />
+                            <span class="donate-amount">50</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="100" />
+                            <span class="donate-amount">100</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="donation_amount" value="1000" />
+                            <span class="donate-amount">1000</span>
+                        </label>
+
+                    </div>
+
+                    <div class="billing-information  d-flex flex-wrap justify-content-between align-items-center">
+                        <h4 class="w-100 mt-5 mb-3">个人信息：</h4>
+
+                        <input type="text" id="nickName" placeholder="姓名:">
+                        <input type="email" id="donorEmail" placeholder="邮箱:">
+                        <input type="text" id="donorAddress" placeholder="地址:">
+                        <input type="text" id="donorMessage" placeholder="留言:">
+                    </div>
+                    <input class="btn gradient-bg mt-5"  type="button" onclick="makeInvest()" value="确定充值">
+                    <h1>交易内容</h1>
+                    <div id="transactionInfo"></div>
+                    <div class="payment-type d-flex flex-wrap align-items-center">
+                        <h4 class="w-100 mt-5">支付方式</h4>
+
+                        <label class="d-flex align-items-center mt-4">
+                            <input type="radio" name="payment_method" value="PayPal" checked="checked" />
+                            <span class="payment-type-radio"></span>
+                            <span class="centered-dot"></span>
+
+                            支付宝
+                        </label>
+                    </div>
+                    <!--                        makeDonation(),-->
+                    <input class="btn gradient-bg mt-5"  type="button" onclick="makeDonation()" value="确定捐助">
+                    <h1>交易内容</h1>
+                    <div id="transactionInfo2"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--bkoutstart-->
+<div id="bk_107202" data-mkid="0" data-mix-mkbkid="0_bk_107202" data-cover="https://cdn.vipcom.cc/Public/image/block/icon_3n.png?31"
+     data-name="icon图标列表"
+     data-file-path="Block/List/icon_3n"
+     data-bid="107202"
+     data-order="5"
+     data-use-type=""
+     data-vip-level="0"
+     class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+     style="background-image:url();"  data-bgsrc="null" data-id="19327_bk_107202_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+     data-hide="1"
+     data-hide-exp=""
+     data-hide-status="0"
+     data-align="center"
+>
+
+    <div style="display:none;" class="btn_set_ani"  data-mypop-ani-data="{bkani:{data:[{s:'设置内部动画效果',v:'0_bk_107202_bkani',c:'js_set_my_ani'}],def:'fadeInUp',type:'tag_select',title:'动画'}}" ></div>
+    <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+
+    <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+
+    <div style="display:none;" class="val_my_outline"  data-val="inneritemstd" ></div>
+    <!--bkoutstart-->
+    <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+        <h1><lhz   data-id="19327_bk_107202_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >加入我们，献出爱心</span></lhz></h1>
+        <p><lhz  style="display:none;" data-id="19327_bk_107202_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+    </div>
+    <!--bkoutend-->
+    <!--bkoutstart-->
+
+    <div id="bk_107202_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+        <!--blockname icon图标列表 blocknameend-->
+
+        <div class="container autopd-vt-big-bak  set_line_num"  data-now-lenm="3">
+            <div class="row inner_set_num" data-key="lpk" data-lp-num="4" data-lp-title="">
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn51"  data-myscs-myiconst="iconweixin-copy" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweixin-copy 0 pubftsz80 pubbtnuucc "   style="color:rgb(0, 142, 87);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微信xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >We Chat</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn52"  data-myscs-myiconst="iconqq" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconqq 0 pubftsz80 pubbtnuucc "   style="color:rgb(34, 174, 230);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQxxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQ</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn53"  data-myscs-myiconst="iconweibo" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweibo 0 pubftsz80 pubbtnuucc "   style="color:rgb(215, 0, 64);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微博xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">MicroBlog</lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn54"  data-myscs-myiconst="iconicon-douyin" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconicon-douyin 0 pubftsz80 pubbtnuucc "   style="color:rgb(12, 12, 12);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >抖音xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">Tiktok</lhz>          </p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>        </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css?31?31">
+<link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css?31">
+<script src="./js/baguetteBox.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css?31">
+<script src="./js/swiper-bundle.min.js?31"></script>
+<script src="./js/jquery.nav.js?31"></script>
+<script src="./js/scrollanim.js?31"></script>
+<script src="./js/lazyload.min.js?31"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='js/circle-progress.min.js'></script>
+<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='js/jquery.barfiller.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='layer/layer.js'></script>
+<script type='text/javascript' src='js/funcJs/base.js'></script>
+<script type='text/javascript' src='js/funcJs/uploadFile.js'></script>
+<script type='text/javascript' src='js/funcJs/index.js'></script>
+<script type='text/javascript'>
+    function makeDonation() {
+        //获取信息
+        let nickName = $("#nickName").val();
+        let donorAddress = $("#donorAddress").val();
+        let donorEmail = $("#donorEmail").val();
+        let donationAmount = $("input[name='donation_amount']:checked").val();
+        let donorMessage = $("#donorMessage").val();
+        if(nickName === "" || nickName == null || donorAddress === "" || donorAddress == null || donorEmail === "" || donorEmail == null){
+            layer.msg("请在捐助之前输入完整的信息哦~");
+        }else{
+            //获取捐助者id
+            //let user = JSON.parse(sessionStorage.getItem("loginUser"));
+            let url = "http://localhost:20190/asset/transfer";
+            let args = {"from_account":nickName,"to_account":"qvyuanfang","amount":donationAmount};
+            //跳转支付宝页面
+            $.post(url,args,function (responseEntity) {
+                var transactionHash = responseEntity.transactionHash;
+                var transactionIndex = responseEntity.transactionIndex;
+                var blockHash = responseEntity.blockHash;
+                var blockNumber = responseEntity.blockNumber;
+                var gasUsed = responseEntity.gasUsed;
+                var contractAddress = responseEntity.contractAddress;
+                var status = responseEntity.status;
+
+                // 创建一个字符串，包含重要信息
+                var transactionInfo2 = "Transaction Hash: " + transactionHash + "\n";
+                transactionInfo2 += "Transaction Index: " + transactionIndex + "\n";
+                transactionInfo2 += "Block Hash: " + blockHash + "\n";
+                transactionInfo2 += "Block Number: " + blockNumber + "\n";
+                transactionInfo2 += "Gas Used: " + gasUsed + "\n";
+                transactionInfo2 += "Contract Address: " + contractAddress + "\n";
+                transactionInfo2 += "Status: " + status;
+
+                // 获取用于展示信息的 div 元素
+                var transactionInfoElement = document.getElementById("transactionInfo2");
+
+                // 将 JSON 数据渲染到页面上
+                transactionInfoElement.innerText = transactionInfo2;
+            })
+        }
+
+    }
+
+    function makeInvest() {
+        //获取信息
+        let nickName = $("#nickName").val();
+        let donorAddress = $("#donorAddress").val();
+        let donorEmail = $("#donorEmail").val();
+        let donationAmount = $("input[name='donation_amount']:checked").val();
+        let donorMessage = $("#donorMessage").val();
+        if(nickName === "" || nickName == null || donorAddress === "" || donorAddress == null || donorEmail === "" || donorEmail == null){
+            layer.msg("请在捐助之前输入完整的信息哦~");
+        }else{
+            //获取捐助者id
+            //let user = JSON.parse(sessionStorage.getItem("loginUser"));
+            let url = "http://localhost:20190/asset/register";
+            let args = {"account":nickName,"to_account":"qvyuanfang","amount":donationAmount};
+            //跳转支付宝页面
+            $.post(url,args,function (responseEntity) {
+                var transactionHash = responseEntity.transactionHash;
+                var transactionIndex = responseEntity.transactionIndex;
+                var blockHash = responseEntity.blockHash;
+                var blockNumber = responseEntity.blockNumber;
+                var gasUsed = responseEntity.gasUsed;
+                var contractAddress = responseEntity.contractAddress;
+                var status = responseEntity.status;
+
+                // 创建一个字符串，包含重要信息
+                var transactionInfo = "Transaction Hash: " + transactionHash + "\n";
+                transactionInfo += "Transaction Index: " + transactionIndex + "\n";
+                transactionInfo += "Block Hash: " + blockHash + "\n";
+                transactionInfo += "Block Number: " + blockNumber + "\n";
+                transactionInfo += "Gas Used: " + gasUsed + "\n";
+                transactionInfo += "Contract Address: " + contractAddress + "\n";
+                transactionInfo += "Status: " + status;
+
+                // 获取用于展示信息的 div 元素
+                var transactionInfoElement = document.getElementById("transactionInfo");
+
+                // 将 JSON 数据渲染到页面上
+                transactionInfoElement.innerText = transactionInfo;
+            })
+        }
+    }
+
+    function selectBalance() {
+        let url = "http://localhost:20190/asset/select";
+        let args = {"account":"qvyuanfang"};
+        //跳转支付宝页面
+        $.post(url,args,function (responseEntity) {
+            // 假设后端返回的金额数据存储在变量 amount 中
+            var amount = responseEntity; // 这里使用示例值，你需要替换成后端返回的实际数据
+
+            // 获取用于展示金额的 span 元素
+            var causeRaisedElement = document.getElementById("causeRaised");
+
+            // 将金额数据添加到 span 元素的内容中，并添加货币单位
+            causeRaisedElement.innerText = amount + "元";
+
+
+        })
+
+    }
+
+    function makeDonationj() {
+        //获取信息
+        let nickName = $("#nickName").val();
+        let donorAddress = $("#donorAddress").val();
+        let donorEmail = $("#donorEmail").val();
+        let donationAmount = $("input[name='donation_amount']:checked").val();
+        let donorMessage = $("#donorMessage").val();
+        if(nickName === "" || nickName == null || donorAddress === "" || donorAddress == null || donorEmail === "" || donorEmail == null){
+            layer.msg("请在捐助之前输入完整的信息哦~");
+        }else{
+            //判断是否金额已经超过目标了
+            if(Number.parseInt(donationAmount) + window.raised > window.goal){
+                layer.msg("亲~您捐助的金额已经超过我们需要的目标啦~可以减少金额哦~");
+            }else{
+                //获取捐助者id
+                let user = JSON.parse(sessionStorage.getItem("loginUser"));
+                let url = BASE_URL + "/donations/makeDonation";
+                let args = {"userId":user.id,"causeId":window.causeId,"amount":donationAmount,"message":donorMessage};
+                //跳转支付宝页面
+                $.post(url,args,function (responseEntity) {
+                    if(responseEntity.result === "SUCCESS"){
+                        //获取了支付地址
+                        //进行跳转
+                        window.open(responseEntity.data);
+                    }else{
+                        //提示用户错误信息
+                        layer.msg(responseEntity.message);
+                    }
+                })
+            }
+        }
+    }
+    function gotoBalance() {
+        // 这里可以编写任何你想要的逻辑，比如跳转到另一个页面
+        window.location.href = 'balance.html'; // 这里的 'balance.html' 是你要跳转的页面的路径
+    }
+
+</script>
+</html>

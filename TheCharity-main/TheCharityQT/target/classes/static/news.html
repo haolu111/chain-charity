@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>慈缘心链-爱心公益网</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/bt3.7.css?1">
+    <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+    <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+
+    <link rel="shortcut icon" href="https://cdn.vipcom.cc./image/czdywzs.png" type="image/x-icon" />
+
+    <script src="./js/lang.js?31"></script>
+    <script src="./js/jquery-1.11.3.min.js?31"></script>
+    <style>
+        /* CSS样式表 */
+        a.btn.gradient-bg:active {
+            color: cyan; /* 设置点击时的颜色为青色 */
+        }
+    </style>
+
+</head>
+<header class="site-header">
+    <div class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bggdcc" style="background-color:rgb(161, 216, 230);background-image: linear-gradient(to right top, #6bd17d, #85d67b, #9dda7b, #b2de7c, #c7e27f, #c5e787, #c2eb90, #c0f099, #a6f5ad, #8df8c3, #74fada, #5ffbf1);;background-size:auto;">
+        <div class="container">
+            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                    <div class="header-bar-email" style="color: black;">
+                        电子邮箱：<a href="#" style="color: black;">3181289794@qq.com</a>
+                    </div><!-- .header-bar-email -->
+                    <div class="header-bar-text" style="color: black;">
+                        <p> 捐助热线：<span style="color: black;">19031528955</span></p>
+                    </div><!-- .header-bar-text -->
+                </div><!-- .col -->
+                <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                    <!-- 检查session是否有user -->
+                    <!-- 有就显示用户+注销 否则显示登录和注册 -->
+                    <div class="donate-btn" id="div_userInfo" style="margin-left: 2px;display: none">
+    							<span>
+    								<img alt="" style="cursor: pointer;" src="images/testimonial-1.jpg" onclick="changeAvatar()" id="t_img">
+    								<input type="file" style="display: none;" id="edit_pIcon" onchange="upload(this,'pIcon')">
+                                    <input type="hidden" id="pIcon">
+    								<a href="profile.html" id="a_username">Jenifer Smith</a>
+    							</span>
+                    </div>
+                    <div class="donate-btn" id="div_logout" style="margin-left: 2px;display: none">
+                        <a href="#">注销</a>
+                    </div>
+                    <div class="donate-btn" id="div_login" style="margin-left: 2px;">
+                        <a href="login.html">登录</a>
+                    </div>
+                    <div class="donate-btn" id="div_register" style="margin-left: 2px;">
+                        <a href="register.html">注册</a>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .top-header-bar -->
+
+    <!--            <div class="nav-bar">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="site-branding d-flex align-items-center">
+                    <a class="d-block" href="index.html" rel="home"><p>慈缘心链</p></a>
+                </div><!-- .site-branding -->
+
+                <nav class="site-navigation d-flex justify-content-end align-items-center">
+                    <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                        <li class="current-menu-item"><a href="index.html">首页</a></li>
+                        <li><a href="portfolio.html">相册</a></li>
+                        <li><a href="allCauses.html">慈善项目</a></li>
+                        <li><a href="about.html">成为志愿者</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="causes.html">捐赠情况</a></li>
+                    </ul>
+                </nav><!-- .site-navigation -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>新闻资讯</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="news-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8" id="newsPage">
+                    <div class="news-content">
+                        
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2024</div>
+
+                                <h2 class="entry-title"><a href="single-news.html">四川自闭症捐赠活动</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+                                    
+                                    <span class="post-author">by <a href="#">李明</a></span>
+                                    <span class="post-comments"><a>3 Comments</a></span>
+                                </div>
+                            </div>
+
+                         
+                        </header>
+
+                        <div class="entry-content">
+                            <p> 3月31日，作为2024年世界自闭症日系列活动“与爱同行，照亮星空”的重量级活动之一，“星悦悦”明星音乐会隆重举行。本次活动以普特融合为基础，采取“主会场+分会场”联动、“线上+线下”并行、“艺术、体育、文化、社会融合”多元关怀的形式。在南充、成都先后举办了星悦悦、星径悦、星光悦、星能量悦、星宝悦、星爱悦、星耀U山丽七场活动。</p></div>
+
+                        <footer class="entry-footer">
+                            <a href="single-news.html" class="btn gradient-bg" style="background-color: aqua;">了解更多</a>
+                        </footer>
+                    </div>
+
+                    <div class="news-content">
+
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2024</div>
+
+                                <h2 class="entry-title"><a href="single-news.html">爱心助学行动</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+                                    
+                                    <span class="post-author">by <a href="#">小红</a></span>
+                                    <span class="post-comments"><a>5 Comments</a></span>
+                                </div>
+                            </div>
+
+                            
+                        </header>
+
+                        <div class="entry-content">
+                            <p> "爱心助学行动"：该活动由一家慈善机构发起，旨在资助贫困地区学生完成学业。通过募集善款，为学生提供学费、书籍和生活费用支持，帮助他们实现教育梦想。</p></div>
+
+                        <footer class="entry-footer">
+                            <a href="single-news.html" class="btn gradient-bg" style="background-color: aqua;">了解更多</a>
+                        </footer>
+                    </div>
+					
+					<div class="news-content">
+					
+					    <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+					        <div class="header-elements">
+					            <div >2022</div>
+					
+					            <h2 class="entry-title"><a href="single-news.html">抗击疫情，共同战胜</a></h2>
+					
+					            <div class="post-metas d-flex flex-wrap align-items-center">
+					                
+					                <span class="post-author">by <a href="#">李明</a></span>
+					                <span class="post-comments"><a>37 Comments</a></span>
+					            </div>
+					        </div>
+					
+					        
+					    </header>
+					
+					    <div class="entry-content">
+                            <p> "抗击疫情，共同战胜"：一家公益组织发起了一场抗击疫情的募捐活动，用于购买医疗物资、支援一线医护人员和帮助受疫情影响的群众。通过广泛的宣传和社会动员，活动得到了广泛的支持和响应。</p></div>
+					
+					    <footer class="entry-footer">
+					        <a href="single-news.html" class="btn gradient-bg" style="background-color: aqua;">了解更多</a>
+					    </footer>
+					</div>
+					
+					<div class="news-content">
+					
+					    <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+					        <div class="header-elements">
+					            <div >2024</div>
+					
+					            <h2 class="entry-title"><a href="single-news.html">关爱留守儿童，温暖成长</a></h2>
+					
+					            <div class="post-metas d-flex flex-wrap align-items-center">
+					                <span class="post-author">by <a href="#">张明</a></span>
+					                <span class="post-comments"><a>7 Comments</a></span>
+					            </div>
+					        </div>
+					
+					        
+					    </header>
+					
+					    <div class="entry-content">
+                            <p> 河北保定一家慈善机构联合当地社区，发起了一项关爱留守儿童的捐款活动。募集的善款将用于改善留守儿童的生活条件，提供心理辅导和教育支持，帮助他们健康成长。</p></div>
+
+
+                        <footer class="entry-footer">
+					        <a href="single-news.html" class="btn gradient-bg" style="background-color: aqua;">了解更多</a>
+					    </footer>
+					</div>
+					
+					
+                    <div class="news-content">
+                        
+
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2022</div>
+
+                                <h2 class="entry-title"><a href="single-news.html">救助山区贫困儿童</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+            
+                                    <span class="post-author">by <a href="#">马佳楠</a></span>
+                                    <span class="post-comments"><a>9 Comments</a></span>
+                                </div>
+                            </div>
+
+                          
+                        </header>
+
+                        <div class="entry-content">
+                            <p> 一家民间公益组织在社交媒体上发起了救助山区贫困儿童的募捐活动。他们计划为山区贫困家庭的儿童提供教育资助、营养补给和医疗援助，帮助他们改善生活状况。</p></div>
+
+
+                        <footer class="entry-footer">
+                            <a href="single-news.html" class="btn gradient-bg" style="background-color: aqua;">了解更多</a>
+                        </footer>
+                    </div>
+
+                    <ul class="pagination d-flex flex-wrap align-items-center p-0">
+                        <li class="active"><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="sidebar">
+                        <div class="search-widget">
+                            <form class="flex flex-wrap align-items-center">
+                                <input type="search" id="searchInput" placeholder="搜索...">
+                                <button type="submit" class="flex justify-content-center align-items-center" id="searchBtn" style="background-color: aqua;">GO</button>
+
+                            </form><!-- .flex -->
+                        </div><!-- .search-widget -->
+
+                        <div class="popular-posts" >
+                            <h2>热点聚焦</h2>
+
+                            <ul class="p-0" id="hotSpotlight">
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/四川孤独症.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">帮助</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/外滩慈善夜%20(1)%20(1).jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">帮助</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/深圳慈善.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">帮助</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .cat-links -->
+
+                        <div class="upcoming-events">
+                            <h2>公益头条</h2>
+
+                            <ul class="p-0" id="publicHeadlines">
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/最美义工.png" alt=""></a></figure>
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">最美丽的志愿者</a></h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span ><a>2024</a></span>
+                                            <span class="event-location"><a>1</a></span>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+									<figure><a><img src="images/以色列.jpeg" alt="">战乱</a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">1</a></h3>
+										
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span ><a>2024</a></span>
+                                            <span class="event-location"><a>1</a></span>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/钱七虎.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-news.html">名人</a></h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span ><a>2024</a></span>
+                                            <span class="event-location"><a>1</a></span>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .cat-links -->
+
+                        <div class="featured-cause" id="todayNews">
+                            <h2>今日要闻</h2>
+
+                            <div class="cause-wrap">
+                                <figure class="m-0 position-relative">
+                                    <a><img src="images/乡村足球梦.jpg" alt=""></a>
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="single-news.html">农村孩子的足球梦</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">1</p>
+                                    </div><!-- .entry-content -->
+
+                                    
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div>
+                    </div><!-- .sidebar -->
+                </div><!-- .col -->
+            </div>
+        </div>
+    </div>
+<!--bkoutstart-->
+<div id="bk_107202" data-mkid="0" data-mix-mkbkid="0_bk_107202" data-cover="https://cdn.vipcom.cc/Public/image/block/icon_3n.png?31"
+     data-name="icon图标列表"
+     data-file-path="Block/List/icon_3n"
+     data-bid="107202"
+     data-order="5"
+     data-use-type=""
+     data-vip-level="0"
+     class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+     style="background-image:url();"  data-bgsrc="null" data-id="19327_bk_107202_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+     data-hide="1"
+     data-hide-exp=""
+     data-hide-status="0"
+     data-align="center"
+>
+
+    <div style="display:none;" class="btn_set_ani"  data-mypop-ani-data="{bkani:{data:[{s:'设置内部动画效果',v:'0_bk_107202_bkani',c:'js_set_my_ani'}],def:'fadeInUp',type:'tag_select',title:'动画'}}" ></div>
+    <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+
+    <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+
+    <div style="display:none;" class="val_my_outline"  data-val="inneritemstd" ></div>
+    <!--bkoutstart-->
+    <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+        <h1><lhz   data-id="19327_bk_107202_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >加入我们，献出爱心</span></lhz></h1>
+        <p><lhz  style="display:none;" data-id="19327_bk_107202_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+    </div>
+    <!--bkoutend-->
+    <!--bkoutstart-->
+
+    <div id="bk_107202_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+        <!--blockname icon图标列表 blocknameend-->
+
+        <div class="container autopd-vt-big-bak  set_line_num"  data-now-lenm="3">
+            <div class="row inner_set_num" data-key="lpk" data-lp-num="4" data-lp-title="">
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn51"  data-myscs-myiconst="iconweixin-copy" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweixin-copy 0 pubftsz80 pubbtnuucc "   style="color:rgb(0, 142, 87);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微信xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >We Chat</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn52"  data-myscs-myiconst="iconqq" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconqq 0 pubftsz80 pubbtnuucc "   style="color:rgb(34, 174, 230);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQxxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQ</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn53"  data-myscs-myiconst="iconweibo" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweibo 0 pubftsz80 pubbtnuucc "   style="color:rgb(215, 0, 64);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微博xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">MicroBlog</lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn54"  data-myscs-myiconst="iconicon-douyin" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconicon-douyin 0 pubftsz80 pubbtnuucc "   style="color:rgb(12, 12, 12);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >抖音xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">Tiktok</lhz>          </p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>        </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css?31?31">
+<link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css?31">
+<script src="./js/baguetteBox.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css?31">
+<script src="./js/swiper-bundle.min.js?31"></script>
+<script src="./js/jquery.nav.js?31"></script>
+<script src="./js/scrollanim.js?31"></script>
+<script src="./js/lazyload.min.js?31"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='js/circle-progress.min.js'></script>
+<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='js/jquery.barfiller.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='layer/layer.js'></script>
+<script type='text/javascript' src='js/funcJs/base.js'></script>
+<script type='text/javascript' src='js/funcJs/uploadFile.js'></script>
+<script type='text/javascript' src='js/funcJs/index.js'></script>
+</html>

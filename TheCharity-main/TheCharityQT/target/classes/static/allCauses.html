@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>慈缘心链-爱心公益网</title>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- ElegantFonts CSS -->
+        <link rel="stylesheet" href="css/elegant-fonts.css">
+
+        <!-- themify-icons CSS -->
+        <link rel="stylesheet" href="css/themify-icons.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="./css/bt3.7.css?1">
+        <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+        <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+
+        <link rel="shortcut icon" href="https://cdn.vipcom.cc./image/czdywzs.png" type="image/x-icon" />
+
+        <script src="./js/lang.js?31"></script>
+        <script src="./js/jquery-1.11.3.min.js?31"></script>
+        <style>
+            /* CSS样式表 */
+            a.btn.gradient-bg:active {
+                color: cyan; /* 设置点击时的颜色为青色 */
+            }
+        </style>
+
+    </head>
+    <header class="site-header">
+        <div class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bggdcc" style="background-color:rgb(161, 216, 230);background-image: linear-gradient(to right top, #6bd17d, #85d67b, #9dda7b, #b2de7c, #c7e27f, #c5e787, #c2eb90, #c0f099, #a6f5ad, #8df8c3, #74fada, #5ffbf1);;background-size:auto;">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email" style="color: black;">
+                            电子邮箱：<a href="#" style="color: black;">3181289794@qq.com</a>
+                        </div><!-- .header-bar-email -->
+                        <div class="header-bar-text" style="color: black;">
+                            <p> 捐助热线：<span style="color: black;">19031528955</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+                    <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <!-- 检查session是否有user -->
+                        <!-- 有就显示用户+注销 否则显示登录和注册 -->
+                        <div class="donate-btn" id="div_userInfo" style="margin-left: 2px;display: none">
+    							<span>
+    								<img alt="" style="cursor: pointer;" src="images/testimonial-1.jpg" onclick="changeAvatar()" id="t_img">
+    								<input type="file" style="display: none;" id="edit_pIcon" onchange="upload(this,'pIcon')">
+                                    <input type="hidden" id="pIcon">
+    								<a href="profile.html" id="a_username">Jenifer Smith</a>
+    							</span>
+                        </div>
+                        <div class="donate-btn" id="div_logout" style="margin-left: 2px;display: none">
+                            <a href="#">注销</a>
+                        </div>
+                        <div class="donate-btn" id="div_login" style="margin-left: 2px;">
+                            <a href="login.html">登录</a>
+                        </div>
+                        <div class="donate-btn" id="div_register" style="margin-left: 2px;">
+                            <a href="register.html">注册</a>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <!--            <div class="nav-bar">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="index.html" rel="home"><p>慈缘心链</p></a>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                            <li class="current-menu-item"><a href="index.html">首页</a></li>
+                            <li><a href="portfolio.html">相册</a></li>
+                            <li><a href="allCauses.html">慈善项目</a></li>
+                            <li><a href="about.html">成为志愿者</a></li>
+                            <li><a href="news.html">新闻资讯</a></li>
+                            <li><a href="causes.html">捐赠情况</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>慈善项目</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="news-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8" id="causesPage">
+                    <div class="news-content">
+                        <a><img src="images/页面3-3.jpg" alt=""></a>
+
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2024</div>
+
+                                <h2 class="entry-title"><a>“光明学校计划”</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+                                    <span class="cat-links">慈善机构</span>
+                                    <span class="post-author">by <a href="#">李明</a></span>
+                                </div>
+                            </div>
+
+                            <div class="donate-icon">
+                                <a href="single-causes.html#donate"><img src="images/donate-icon.png" alt=""></a>
+                            </div>
+                        </header>
+
+                        <div class="entry-content">
+                            <p class="hide_text">“光明学校计划”是一个致力于为贫困地区的儿童提供基础教育机会的慈善项目。在许多偏远地区，儿童因家庭经济困难和缺乏学校设施而无法接受教育。本项目旨在建立和修缮学校设施，提供必要的学习材料，以及资助教师的培训和薪资。通过您的慷慨捐赠，我们可以帮助这些孩子走出贫困，开启知识和机会的大门。每一笔捐款都将直接用于学校建设、教材购置和教师支持，确保每个孩子都有机会学习和成长。加入我们，共同点亮未来的希望！</p>
+                        </div>
+
+                        <footer class="entry-footer">
+                            <a href="single-causes.html" class="btn gradient-bg">了解更多</a>
+                        </footer>
+                    </div>
+
+                    <div class="news-content">
+                        <a><img src="images/页面3-4.jpg" alt=""></a>
+
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2024</div>
+
+                                <h2 class="entry-title"><a>
+                                    “清泉行动”：为乡村带来清洁水源</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+                                    <span class="cat-links">慈善机构 </span>
+                                    <span class="post-author">by <a href="#">李明</a></span>
+                                </div>
+                            </div>
+
+                            <div class="donate-icon">
+                                <a href="single-causes.html#donate"><img src="images/donate-icon.png" alt=""></a>
+                            </div>
+                        </header>
+
+                        <div class="entry-content">
+                            <p class="hide_text">“清泉行动”是一个旨在解决贫困地区饮用水问题的公益项目。在全球许多乡村地区，干净的饮用水依然难以获得，导致当地居民面临严重的健康风险。该项目通过建设井泉、水塔和过滤设施，为这些社区提供持续的、安全的饮用水。您的捐款将用于购买建设材料、支付工程师和当地工人的劳动，以及维护现有的水源设施。让我们携手合作，改善数千人的生活条件，让干净的水流入每一个需要的家庭。每一点贡献都会使这一目标更加接近实现。</p>></div>
+
+                        <footer class="entry-footer">
+                            <a href="single-causes.html" class="btn gradient-bg">了解更多</a>
+                        </footer>
+                    </div>
+
+                    <div class="news-content">
+                        <a><img src="images/页面3-5.jpg" alt=""></a>
+
+                        <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <div >2024</div>
+
+                                <h2 class="entry-title"><a>
+                                    “阳光食粮”：让食物温暖每个贫困家庭</a></h2>
+
+                                <div class="post-metas d-flex flex-wrap align-items-center">
+                                    <span class="cat-links">慈善机构 </span>
+                                    <span class="post-author">by <a href="#">李明</a></span>
+                                </div>
+                            </div>
+
+                            <div class="donate-icon">
+                                <a href="single-causes.html#donate"><img src="images/donate-icon.png" alt=""></a>
+                            </div>
+                        </header>
+
+                        <div class="entry-content">
+                            <p class="hide_text">“阳光食粮”是一个专注于消除贫困地区饥饿问题的慈善项目。我们的目标是确保每个家庭，尤其是儿童，都能获得充足和营养均衡的食物。通过建立食物库、组织食物分发活动和提供营养教育，我们希望改变数百万人面临的饥饿现状。您的捐款将用于购买和运送食品、支持当地农民的可持续发展以及开展营养教育课程。加入“阳光食粮”，为世界带去更多希望和满足，让没有一个孩子因饥饿而失去未来的机会。</p>
+                        </div>
+
+                        <footer class="entry-footer">
+                            <a href="single-causes.html" class="btn gradient-bg">了解更多</a>
+                        </footer>
+                    </div>
+
+                    <ul class="pagination d-flex flex-wrap align-items-center p-0">
+                        <li class="active"><a href="#" onclick="return false;">01</a></li>
+                        <li><a>.......</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="sidebar">
+                        <div class="search-widget">
+                            <form class="flex flex-wrap align-items-center">
+                                <input type="search" id="searchInput" placeholder="搜索...">
+                                <button type="submit" class="flex justify-content-center align-items-center" id="searchBtn" style="background-color: aqua;">进入</button>
+                            </form><!-- .flex -->
+                        </div><!-- .search-widget -->
+
+                        <div class="popular-posts" >
+                            <h2>热门活动</h2>
+
+                            <ul class="p-0" id="popular-posts">
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/页面3-5.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">一个近期募捐实例</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/页面3-6.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">我们热爱帮助他人</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/页面3-7.webp" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">有关救助的信息</a></h3>
+
+                                        <div >2024</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .cat-links -->
+
+                        <div class="upcoming-events">
+                            <h2>近期活动</h2>
+
+                            <ul class="p-0" id="upcoming-events">
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/页面3-8.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">儿童筹款活动</a></h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span class="posted-date"><a>2024</a></span>
+                                            <span class="event-location"><a>河北保定</a></span>
+                                        </div>
+
+                                        <p class="hide_text">欢迎光临！我们专注于为您提供优质服务和产品，有专业团队为您定制个性化解决方案。感谢您的支持！</p>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/u-2.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">受助的孩子</a></h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span class="posted-date"><a>2024</a></span>
+                                            <span class="event-location"><a>山西太原</a></span>
+                                        </div>
+
+                                        <p class="hide_text">奉献不是你所剩下的，而是你所能给予的</p>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a><img src="images/u-3.jpg" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="single-causes.html">募捐项目</a></h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span class="posted-date"><a>2024</a></span>
+                                            <span class="event-location"><a>陕西西安</a></span>
+                                        </div>
+
+                                        <p class="hide_text">捐款不仅仅是给予，更是一种奉献，一种爱心的表达</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- .cat-links -->
+
+                        <div class="featured-cause" id="featured-cause">
+                            <h2>特色公益</h2>
+
+                            <div class="cause-wrap">
+                                <figure class="m-0 position-relative">
+                                    <a><img src="images/页面3-9.jpg" alt=""></a>
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="single-causes.html">为灾区的人捐赠</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0 hide_text">捐款并不一定要富有，只要心存善念，就能成就一份奉献 </p>
+                                    </div><!-- .entry-content -->
+
+                                    <div class="fund-raised w-100" id="fund-raised">
+                                        <div class="fund-raised-bar-3 barfiller">
+                                            <div class="tipWrap">
+                                                <span class="tip"></span>
+                                            </div><!-- .tipWrap -->
+
+                                            <span class="fill" data-percentage="83"></span>
+                                        </div><!-- .fund-raised-bar -->
+
+                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class="fund-raised-total mt-4">
+                                                已筹集: $56 880
+                                            </div><!-- .fund-raised-total -->
+
+                                            <div class="fund-raised-goal mt-4">
+                                                目标: $70 000
+                                            </div><!-- .fund-raised-goal -->
+                                        </div><!-- .fund-raised-details -->
+                                    </div><!-- .fund-raised -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div>
+                    </div><!-- .sidebar -->
+                </div><!-- .col -->
+            </div>
+        </div>
+    </div>
+
+<!--bkoutstart-->
+<div id="bk_107202" data-mkid="0" data-mix-mkbkid="0_bk_107202" data-cover="https://cdn.vipcom.cc/Public/image/block/icon_3n.png?31"
+     data-name="icon图标列表"
+     data-file-path="Block/List/icon_3n"
+     data-bid="107202"
+     data-order="5"
+     data-use-type=""
+     data-vip-level="0"
+     class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+     style="background-image:url();"  data-bgsrc="null" data-id="19327_bk_107202_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+     data-hide="1"
+     data-hide-exp=""
+     data-hide-status="0"
+     data-align="center"
+>
+
+    <div style="display:none;" class="btn_set_ani"  data-mypop-ani-data="{bkani:{data:[{s:'设置内部动画效果',v:'0_bk_107202_bkani',c:'js_set_my_ani'}],def:'fadeInUp',type:'tag_select',title:'动画'}}" ></div>
+    <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+
+    <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+
+    <div style="display:none;" class="val_my_outline"  data-val="inneritemstd" ></div>
+    <!--bkoutstart-->
+    <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+        <h1><lhz   data-id="19327_bk_107202_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >加入我们，献出爱心</span></lhz></h1>
+        <p><lhz  style="display:none;" data-id="19327_bk_107202_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+    </div>
+    <!--bkoutend-->
+    <!--bkoutstart-->
+
+    <div id="bk_107202_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+        <!--blockname icon图标列表 blocknameend-->
+
+        <div class="container autopd-vt-big-bak  set_line_num"  data-now-lenm="3">
+            <div class="row inner_set_num" data-key="lpk" data-lp-num="4" data-lp-title="">
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn51"  data-myscs-myiconst="iconweixin-copy" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweixin-copy 0 pubftsz80 pubbtnuucc "   style="color:rgb(0, 142, 87);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微信xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >We Chat</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn52"  data-myscs-myiconst="iconqq" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconqq 0 pubftsz80 pubbtnuucc "   style="color:rgb(34, 174, 230);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQxxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQ</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn53"  data-myscs-myiconst="iconweibo" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweibo 0 pubftsz80 pubbtnuucc "   style="color:rgb(215, 0, 64);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微博xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">MicroBlog</lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn54"  data-myscs-myiconst="iconicon-douyin" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconicon-douyin 0 pubftsz80 pubbtnuucc "   style="color:rgb(12, 12, 12);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >抖音xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">Tiktok</lhz>          </p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>        </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css?31?31">
+<link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css?31">
+<script src="./js/baguetteBox.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css?31">
+<script src="./js/swiper-bundle.min.js?31"></script>
+<script src="./js/jquery.nav.js?31"></script>
+<script src="./js/scrollanim.js?31"></script>
+<script src="./js/lazyload.min.js?31"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='js/circle-progress.min.js'></script>
+<script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='js/jquery.barfiller.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='layer/layer.js'></script>
+<script type='text/javascript' src='js/funcJs/base.js'></script>
+<script type='text/javascript' src='js/funcJs/uploadFile.js'></script>
+<script type='text/javascript' src='js/funcJs/index.js'></script>
+</html>

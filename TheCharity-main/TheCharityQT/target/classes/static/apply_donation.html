@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐款申请表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #donationFormWrapper {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            border: none;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div id="donationFormWrapper">
+    <h2>捐款申请表</h2>
+    <form id="donationForm">
+        <div>
+            <label for="fullName">姓名：</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phoneNumber">电话：</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div>
+            <label for="address">地址：</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div>
+            <label for="proofDocument">证明文件：</label>
+            <input type="file" id="proofDocument" name="proofDocument" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div>
+            <button type="submit">提交申请</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById("donationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+
+        // 模拟提交过程，这里可以用 Ajax 或其他方式发送数据到后端进行处理
+        // 这里仅为示例，实际需要替换为真实的后端处理逻辑
+        setTimeout(function() {
+            // 提交成功后，弹出提示框
+            alert("信息提交成功，请您等待核实后通知。");
+
+            // 返回到原来的页面
+            window.location.href = "profile.html";
+        }, 1000); // 延迟1秒模拟提交过程
+    });
+</script>
+</body>
+</html>

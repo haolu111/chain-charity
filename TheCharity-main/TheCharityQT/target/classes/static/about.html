@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>慈缘心链-爱心公益网</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/bt3.7.css?1">
+    <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+    <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+
+    <link rel="shortcut icon" href="https://cdn.vipcom.cc./image/czdywzs.png" type="image/x-icon" />
+
+    <script src="./js/lang.js?31"></script>
+    <script src="./js/jquery-1.11.3.min.js?31"></script>
+    <style>
+        /* CSS样式表 */
+        a.btn.gradient-bg:active {
+            color: cyan; /* 设置点击时的颜色为青色 */
+        }
+    </style>
+
+</head>
+<header class="site-header">
+    <div class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bggdcc" style="background-color:rgb(161, 216, 230);background-image: linear-gradient(to right top, #6bd17d, #85d67b, #9dda7b, #b2de7c, #c7e27f, #c5e787, #c2eb90, #c0f099, #a6f5ad, #8df8c3, #74fada, #5ffbf1);;background-size:auto;">
+    <div class="container">
+            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                    <div class="header-bar-email" style="color: black;">
+                        电子邮箱：<a href="#" style="color: black;">3181289794@qq.com</a>
+                    </div><!-- .header-bar-email -->
+                    <div class="header-bar-text" style="color: black;">
+                        <p> 捐助热线：<span style="color: black;">19031528955</span></p>
+                    </div><!-- .header-bar-text -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                    <!-- 检查session是否有user -->
+                    <!-- 有就显示用户+注销 否则显示登录和注册 -->
+                    <div class="donate-btn" id="div_userInfo" style="margin-left: 2px;display: none">
+    							<span>
+    								<img alt="" style="cursor: pointer;" src="images/testimonial-1.jpg" onclick="changeAvatar()" id="t_img">
+    								<input type="file" style="display: none;" id="edit_pIcon" onchange="upload(this,'pIcon')">
+                                    <input type="hidden" id="pIcon">
+    								<a href="profile.html" id="a_username">Jenifer Smith</a>
+    							</span>
+                    </div>
+                    <div class="donate-btn" id="div_logout" style="margin-left: 2px;display: none">
+                        <a href="#">注销</a>
+                    </div>
+                    <div class="donate-btn" id="div_login" style="margin-left: 2px;">
+                        <a href="login.html">登录</a>
+                    </div>
+                    <div class="donate-btn" id="div_register" style="margin-left: 2px;">
+                        <a href="register.html">注册</a>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div>
+
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="index.html" rel="home"><p>慈缘心链</p></a>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="portfolio.html">相册</a></li>
+                            <li><a href="allCauses.html">慈善项目</a></li>
+                            <li  class="current-menu-item"><a href="about.html">成为志愿者</a></li>
+                            <li><a href="news.html">新闻资讯</a></li>
+                            <li><a href="causes.html">捐赠情况</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>成为志愿者</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="welcome-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title" >志愿者招募须知</h2>
+                        </header>
+
+                        <div class="entry-content mt-5"  style="color: #000000;">
+							<h4 >1.志愿服务范围</h4>
+							<br>
+                            <p>我会志愿服务范围包括为我会自身及在团体会员单位开展安老抚幼、助残济困、助医助学、社区服务、公益服务、紧急救援以及日常慈善等活动中提供服务和帮助。</p>
+							<h4>2.志愿者需要具备的条件</h4>
+							<br>
+							<p>（一）年满十八周岁，具有完全民事行为能力；</p>
+							<p>（二）热心慈善公益事业，具有“奉献、友爱、互助、进步”的志愿服务精神；</p>
+							<p>（三）自愿从事义务服务；</p>
+							<p>（四）具备参加志愿服务相应的基本能力和身体素质；</p>
+							<p>（五）品行端正，遵守国家法律法规和志愿者组织的相关规定。</p>
+							<br>
+							<h4>3.如何申请成为本会志愿者</h4>
+							<br>
+							<p>（一）个人凭身份证或学生证等有效证件到我会填写《志愿者申请表》并发送该会邮箱<strong> <a href="#bottom">(链接会在文末)</a></strong></p>
+							<p>（二）团体需统一领取《志愿者申请表》，填写后由团体负责人提交该会邮箱</p>
+							<p>（三）经审核后，成功后可以查看个人信息情况变化</p>
+							<br>
+							<h4>4.申请成为志愿者后需要履行的义务</h4>
+							<br>
+							<p>（一）遵守国家法律法规及志愿者组织的相关规定。</p>
+							<p>（二）提供真实、准确、完整的注册相关信息，如有信息变更及时联系修改。</p>
+							<p>（三）履行志愿服务承诺或者协议约定的义务，完成志愿服务。</p>
+							<p>（四）自觉维护我会和自身的形象和声誉。</p>
+							<p>（五）自觉维护服务对象的合法权益。</p>
+							<p>（六）退出志愿服务活动时，履行合理告知的义务。</p>
+							<p>（七）保守在参与志愿服务活动过程中获悉的个人隐私、商业秘密或者其他依法受保护的信息。</p>
+							<p>（八）不得向接受志愿服务的组织或者个人索取、变相索取报酬。</p>
+							<p>（九）不得以志愿者身份从事任何以营利为目的或违背社会公德的活动。</p>
+							<p>（十）其他依法应当履行的义务。</p>
+							<br>
+							<h4>如有任何疑问，可通过以下方式与我们联系。</h4>
+							<br>
+							<p>电子邮箱：3181289794@qq.com</p>
+							<p>捐助热线：<span>19031528955</span></p>
+						</div><!-- .entry-content -->
+
+                        
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="about-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>我们志愿者将青春浸润在奉献之中，伸出温暖之手，怀抱感恩之心，助人为乐，让志愿服务的火焰在心中燃烧，成就自我，照亮他人的道路。</p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="image/20230207213941690.png" alt="">
+
+                            <h4><span>志愿者：</span>小王</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 offset-lg-2 col-lg-5">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>让我们从身边做起，肩负起为社会服务的使命。让我们这群新一代的青年，用热情的心为他人带来温暖，用微薄的力量去承担起微弱的责任！加入我们的行列吧！让爱心的奉献成为我们志愿者之间共同的追求，让我们志愿者同行，携手前行！</p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="image/20230207213941690.png" alt="">
+
+                            <h4><span>志愿者：</span>小明</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--bkoutstart-->
+<div id="bk_107202" data-mkid="0" data-mix-mkbkid="0_bk_107202" data-cover="https://cdn.vipcom.cc/Public/image/block/icon_3n.png?31"
+     data-name="icon图标列表"
+     data-file-path="Block/List/icon_3n"
+     data-bid="107202"
+     data-order="5"
+     data-use-type=""
+     data-vip-level="0"
+     class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+     style=""  data-bgsrc="null" data-id="19327_bk_107202_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+     data-hide="1"
+     data-hide-exp=""
+     data-hide-status="0"
+     data-align="center"
+>
+    <!--bkoutend-->
+    <!--bkoutstart-->
+    <!--bkoutend-->
+
+
+    <div style="display:none;" class="btn_set_ani"  data-mypop-ani-data="{bkani:{data:[{s:'设置内部动画效果',v:'0_bk_107202_bkani',c:'js_set_my_ani'}],def:'fadeInUp',type:'tag_select',title:'动画'}}" ></div>
+    <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+
+    <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+
+    <div style="display:none;" class="val_my_outline"  data-val="inneritemstd" ></div>
+    <!--bkoutstart-->
+    <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+        <h1><lhz   data-id="19327_bk_107202_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >加入我们，献出爱心</span></lhz></h1>
+        <p><lhz  style="display:none;" data-id="19327_bk_107202_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+    </div>
+    <!--bkoutend-->
+    <!--bkoutstart-->
+
+    <div id="bk_107202_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+        <!--blockname icon图标列表 blocknameend-->
+
+        <div class="container autopd-vt-big-bak  set_line_num"  data-now-lenm="3">
+            <div class="row inner_set_num" data-key="lpk" data-lp-num="4" data-lp-title="">
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn51"  data-myscs-myiconst="iconweixin-copy" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweixin-copy 0 pubftsz80 pubbtnuucc "   style="color:rgb(0, 142, 87);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微信xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >We Chat</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn52"  data-myscs-myiconst="iconqq" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconqq 0 pubftsz80 pubbtnuucc "   style="color:rgb(34, 174, 230);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQxxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQ</span></lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn53"  data-myscs-myiconst="iconweibo" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweibo 0 pubftsz80 pubbtnuucc "   style="color:rgb(215, 0, 64);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微博xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">MicroBlog</lhz>          </p>
+                    </div>
+                </div>
+                <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                    <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                        <div style="text-align:center;">
+                            <div data-id="19327_bk_107202_btn54"  data-myscs-myiconst="iconicon-douyin" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconicon-douyin 0 pubftsz80 pubbtnuucc "   style="color:rgb(12, 12, 12);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                        <h3 class="bk_ftcc">
+                            <lhz   data-id="19327_bk_107202_tt_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >抖音xxx</span></lhz>          </h3>
+                        <p class="bk_ftcc" style="padding-left:0px;">
+                            <lhz   data-id="19327_bk_107202_tt_dp4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">Tiktok</lhz>          </p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>        </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css?31?31">
+<link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css?31">
+<script src="./js/baguetteBox.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css?31">
+<script src="./js/swiper-bundle.min.js?31"></script>
+<script src="./js/jquery.nav.js?31"></script>
+<script src="./js/scrollanim.js?31"></script>
+<script src="./js/lazyload.min.js?31"></script>
+    <script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <script type='text/javascript' src='layer/layer.js'></script>
+    <script type='text/javascript' src='js/funcJs/base.js'></script>
+    <script type='text/javascript' src='js/funcJs/uploadFile.js'></script>
+</html>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>慈缘心链-爱心公益网</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bt3.7.css?1">
+    <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+    <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+
+    <link rel="shortcut icon" href="https://cdn.vipcom.cc./image/czdywzs.png" type="image/x-icon" />
+
+    <script src="./js/lang.js?31"></script>
+    <script src="./js/jquery-1.11.3.min.js?31"></script>
+    <style>
+        /* CSS样式表 */
+        a.btn.gradient-bg:active {
+            color: cyan; /* 设置点击时的颜色为青色 */
+        }
+    </style>
+
+</head>
+<header class="site-header">
+    <div class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bggdcc" style="background-color:rgb(161, 216, 230);background-image: linear-gradient(to right top, #6bd17d, #85d67b, #9dda7b, #b2de7c, #c7e27f, #c5e787, #c2eb90, #c0f099, #a6f5ad, #8df8c3, #74fada, #5ffbf1);;background-size:auto;">
+        <div class="container">
+            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                    <div class="header-bar-email" style="color: black;">
+                        电子邮箱：<a href="#" style="color: black;">3181289794@qq.com</a>
+                    </div><!-- .header-bar-email -->
+                    <div class="header-bar-text" style="color: black;">
+                        <p> 捐助热线：<span style="color: black;">19031528955</span></p>
+                    </div><!-- .header-bar-text -->
+                </div><!-- .col -->
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+    						<!-- 检查session是否有user -->
+    						<!-- 有就显示用户+注销 否则显示登录和注册 -->
+    						<div class="donate-btn" id="div_userInfo" style="margin-left: 2px;display: none">
+    							<span>
+    								<img alt="" style="cursor: pointer;" src="images/testimonial-1.jpg" onclick="changeAvatar()" id="t_img">
+    								<input type="file" style="display: none;" id="edit_pIcon" onchange="upload(this,'pIcon')">
+                                    <input type="hidden" id="pIcon">
+    								<a href="profile.html" id="a_username">Jenifer Smith</a>
+    							</span>
+    						</div>
+    						<div class="donate-btn" id="div_logout" style="margin-left: 2px;display: none">
+    							<a href="#">注销</a>
+    						</div>
+    						<div class="donate-btn" id="div_login" style="margin-left: 2px;">
+    							<a href="login.html">登录</a>
+    						</div>
+    						<div class="donate-btn" id="div_register" style="margin-left: 2px;">
+    						    <a href="register.html">注册</a>
+    						</div>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .top-header-bar -->
+    
+<!--            <div class="nav-bar">-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="site-branding d-flex align-items-center">
+                               <a class="d-block" href="index.html" rel="home"><img class ="d-block" src="images/logo.jpg" alt = "logo"></a>
+                            </div><!-- .site-branding -->
+    
+                            <nav class="site-navigation d-flex justify-content-end align-items-center">
+                                <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">首页</a></li>
+                                    <li><a href="portfolio.html">相册</a></li>
+                                    <li><a href="allCauses.html">慈善项目</a></li>
+                                    <li><a href="about.html">成为志愿者</a></li>
+                                    <li><a href="news.html">新闻资讯</a></li>
+                                    <li><a href="causes.html">捐赠情况</a></li>
+                                </ul>
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+    <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap">
+                <img src="images/首页1.jpg" alt="">
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h2>偏远山村孩子的向往</h2>
+<!--                                    <h4>AI YOU FOUNDATION</h4>-->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content mt-4">
+                                    <p>在我们生活的城市灯火通明之处，有一群孩子，他们生活在偏远的山村，他们的背影被遗忘在时间的角落。这些孩子，他们的梦想也许没有我们的遥远，但他们的心灵却同样充满了对未来的向往与渴望。</p>
+                                </div><!-- .entry-content -->
+
+                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+
+
+                                    <a href="single-causes.html?causeId=5#donate" style="background-color: aqua;" class="btn gradient-bg mr-2">立刻捐助</a>
+
+                                    <a href="single-causes.html?causeId=5" style="background-color: aqua;color: black;" class="btn orange-border">了解详情</a>
+                                </footer><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+
+            <div class="swiper-slide hero-content-wrap">
+                <img src="images/页面3-10.jpg" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h2>加沙人民遭受战火摧残</h2>
+<!--                                    <h4>CHILDREN'S CHARITY</h4>-->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content mt-4">
+                                    <p>在地中海东岸，有一个被战火烙印的地方，那就是加沙。这片土地上的人民，长期以来饱受战乱之苦，生活在极度贫困和恐惧中。尤其是孩子们，他们的童年被暴力和困苦所剥夺，梦想被战火烧毁，希望被囚禁。</p>
+                                </div><!-- .entry-content -->
+
+                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <a href="single-causes.html?causeId=6#donate" style="background-color: aqua;" class="btn gradient-bg mr-2">立刻捐助</a>
+                                    <a href="single-causes.html?causeId=6" style="background-color: aqua;color: black;" class="btn orange-border">了解详情</a>
+                                </footer><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+
+            <div class="swiper-slide hero-content-wrap">
+                <img src="images/乡村足球梦.jpg" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h2>乡村孩子的足球梦</h2>
+<!--                                    <h4>Children's Foundation of China</h4>-->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content mt-4">
+                                    <p>在乡村的土地上，有一群纯真的孩子们，他们的眼中闪烁着对足球的热爱和梦想。虽然他们的生活简朴，但内心的激情却是如此火热，他们的梦想如此真实而坚定。</p>
+                                </div><!-- .entry-content -->
+
+                                <footer class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <a href="single-causes.html?causeId=7#donate" style="background-color: aqua;" class="btn gradient-bg mr-2">立刻捐助</a>
+                                    <a href="single-causes.html?causeId=7"  style="background-color: aqua;color: black;" class="btn orange-border">了解详情</a>
+                                </footer><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div><!-- .swiper-wrapper -->
+
+        <div class="pagination-wrap position-absolute w-100">
+            <div class="container">
+                <div class="swiper-pagination"></div>
+            </div><!-- .container -->
+        </div><!-- .pagination-wrap -->
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
+    </div><!-- .hero-slider -->
+
+    <div class="home-page-icon-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/hands-gray.png" alt="">
+                            <img src="images/hands-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <a href="about.html"><h3 class="entry-title">志愿服务，温暖心灵</h3></a>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>发挥爱心，铸就美好，志愿服务，点亮希望，为社区，为世界，共同奉献，共筑未来。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/donation-gray.png" alt="">
+                            <img src="images/donation-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <a href="allCauses.html"><h3 class="entry-title">爱心助力，温暖共享</h3></a>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>让善意传递，改变世界的每一分捐助都有价值！一起行动，为更美好的未来添砖加瓦！ </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/charity-gray.png" alt="">
+                            <img src="images/charity-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <a href="news.html"><h3 class="entry-title">时事热点,新闻资讯</h3></a>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>实时报道最新公益慈善实事，将公益事业活动的最真实的一面展现给广大公众，激发公众兴趣，引导公众积极参与其中 </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="home-page-welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title">欢迎来到慈缘心链</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>爱心慈善网是一个致力于连接善心人士与有需要的群体的平台。我们深信，爱是世界上最强大的力量，而通过爱心慈善网，您可以让这种力量得到充分释放，为改变世界贡献一份力量。让我们一起携起手来，让爱传递，改变世界！请登录爱心慈善网，一起为更美好的未来努力奋斗吧！</p>
+                        </div><!-- .entry-content -->
+
+                        <div class="entry-footer mt-5">
+                            <a href="portfolio.html" class="btn gradient-bg mr-2">了解更多</a>
+                        </div><!-- .entry-footer -->
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
+                    <img src="images/最后111.jpg" alt="welcome">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="home-page-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="upcoming-events" id="upcoming-events">
+                        <div class="section-heading">
+                            <h2 class="entry-title">公益项目</h2>
+                        </div><!-- .section-heading -->
+
+                        <div class="event-wrap d-flex flex-wrap justify-content-between" >
+                            <figure class="m-0">
+                                <img src="images/运动梦想公益计划.jpg" alt="">
+                            </figure>
+
+                            <div class="event-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a>运动梦想公益计划</a></h3>
+
+                                    <div class="posted-date">
+                                        <a>2024 </a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a>Shanghai</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0 hide_text">运动梦想课是一门针对中小学生的安全、高效、有趣的综合体适能课程,旨在发挥体育对孩子健康成长的全面功能，激发运动 兴趣，培养终身体育意识，帮助塑造健全人格， 最终为学 生一生的幸福打下坚实的基础。</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <a href="single-causes.html" >了解更多</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .event-content-wrap -->
+                        </div><!-- .event-wrap -->
+
+                        <div class="event-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img src="images/爱在边疆.jpg" alt="">
+                            </figure>
+
+                            <div class="event-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a>爱在边疆</a></h3>
+
+                                    <div class="posted-date">
+                                        <a>2024</a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a>Shanghai</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0 hide_text">爱在边疆项目将已三年为一个周期，与县域和学校建立持续结对帮扶的关系。项邀请城市优秀学校与边疆项目学校将开展定期的线上交流、线下互访，开展教研讲座、同课异构、听课指导、挂职交流等各类活动。</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <a href="single-causes.html">了解更多</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .event-content-wrap -->
+                        </div><!-- .event-wrap -->
+
+                        <div class="event-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img src="images/金色梦想家.jpg" alt="">
+                            </figure>
+                            <div class="event-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a>金色梦想家</a></h3>
+
+                                    <div class="posted-date">
+                                        <a>2024 </a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a>Shanghai</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0 hide_text">2023年，真爱梦想启动“金色年华”公益项目，从上海起步，身体、心理、社会参与等不同层面面向乐龄群体，帮助他们规划新人生，适应新身份、发现新自我、 建立新联结、创造新价值。</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <a href="single-causes.html" >了解更多</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .event-content-wrap -->
+                        </div><!-- .event-wrap -->
+                    </div><!-- .upcoming-events -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6">
+                    <div class="featured-cause" id="featured-cause">
+                        <div class="section-heading">
+                            <h2 class="entry-title">特色公益</h2>
+                        </div><!-- .section-heading -->
+
+                        <div class="cause-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img src="images/去远方.jpeg" alt="">
+                            </figure>
+
+                            <div class="cause-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a>去远方</a></h3>
+
+                                    <div class="posted-date">
+                                        <a>2024</a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a>Shanghai</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0 hide_text">“去远方” 研学旅行项目是上海真爱梦想公益基金会帮助孩子们走出校门，自主探索广阔未知世界的综合实践活动。依托梦想课程《去远方》，引导孩子们通过小组合作，制定旅行方案，掌握基本出行技能。</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer mt-5">
+                                    <a href="single-causes.html#donate" class="btn gradient-bg mr-2">立刻捐助</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .cause-content-wrap -->
+
+                            <div class="fund-raised w-100">
+                                <div class="featured-fund-raised-bar barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div><!-- .tipWrap -->
+
+                                    <span class="fill" data-percentage="83"></span>
+                                </div><!-- .fund-raised-bar -->
+
+                                <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                    <div class="fund-raised-total mt-4">
+                                        Raised: $32 590
+                                    </div><!-- .fund-raised-total -->
+
+                                    <div class="fund-raised-goal mt-4">
+                                        Goal: $90 000
+                                    </div><!-- .fund-raised-goal -->
+                                </div><!-- .fund-raised-details -->
+                            </div><!-- .fund-raised -->
+                        </div><!-- .cause-wrap -->
+                    </div><!-- .featured-cause -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-events -->
+
+    <div class="our-causes" >
+        <div class="container">
+            <div class="row">
+                <div class="coL-12">
+                    <div class="section-heading">
+                        <h2 class="entry-title">我们的慈善项目</h2>
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container causes-slider">
+                        <div class="swiper-wrapper" id="goingCauses">
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/梦想大篷车.png" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0 "><a>梦想大篷车</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text">2015-2021年，七年时间里大篷车共走过了27省市83个地区231所学校，累计行驶超过172000公里，为孩子们共带去959节梦想课程，514节科创课程。</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-1 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="83"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 850
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/小童善治.png" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a>小童善治</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text">“小童善治”是由上海市民政局指导、杨浦区民政局牵头，真爱梦想发起的整合政府、学校、企业和NGO资源，推动上海学生参与社会治理和社会实践，提升其责任担当核心素养的项目。旨在打造“家-校-社区-社会组织-企业”五位一体的合作参与路径，形成儿童参与社区治理的“上海模式”。</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-2 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="70"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 590
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/梦想教练员.png" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a>梦想教练计划</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text">“梦想教练计划”是真爱梦想致力于“推动素养教育、共创教育生态”的公益实践行动，是由多元志愿者带去赋能与创新，让一线教师看到自我成长路径及方法的培训项目。每年招募高校大学生、中学生校长、社会志愿者、“梦想讲师”（即优秀梦想课程执教老师）组成教练团队...</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-3 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="83"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 590
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/一县一梦想.jpg" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a>一县一梦想</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text_03">五育并举的德智体美劳专项，课程教师培训，配套教师教学授课所需课程，软硬件学习资源及平台，组织教学教研交流活动，跨校听评课、展示课活动。</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-4 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="83"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 560
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/小童善治.png" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a>小童善治</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text">“小童善治”是由上海市民政局指导、杨浦区民政局牵头，真爱梦想发起的整合政府、学校、企业和NGO资源，推动上海学生参与社会治理和社会实践，提升其责任担当核心素养的项目。旨在打造“家-校-社区-社会组织-企业”五位一体的合作参与路径，形成儿童参与社区治理的“上海模式”。</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-5 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="70"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 590
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/梦想教练员.png" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="single-causes.html" class="btn gradient-bg mr-2">立刻捐助</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a>梦想教练员</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0 hide_text">L“梦想教练计划”是真爱梦想致力于“推动素养教育、共创教育生态”的公益实践行动，是由多元志愿者带去赋能与创新，让一线教师看到自我成长路径及方法的培训项目。每年招募高校大学生、中学生校长、社会志愿者、“梦想讲师”（即优秀梦想课程执教老师）组成教练团队...</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-6 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="83"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Raised: $32 590
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Goal: $50 000
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+                        </div><!-- .swiper-wrapper -->
+
+                    </div><!-- .swiper-container -->
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next flex justify-content-center align-items-center">
+                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                    </div>
+                    <div class="swiper-button-prev flex justify-content-center align-items-center">
+                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .our-causes -->
+    <!--bkoutstart-->
+    <div id="bk_107202" data-mkid="0" data-mix-mkbkid="0_bk_107202" data-cover="https://cdn.vipcom.cc/Public/image/block/icon_3n.png?31"
+         data-name="icon图标列表"
+         data-file-path="Block/List/icon_3n"
+         data-bid="107202"
+         data-order="5"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+         style=""  data-bgsrc="null" data-id="19327_bk_107202_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1"
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+    >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+        <!--bkoutend-->
+
+
+        <div style="display:none;" class="btn_set_ani"  data-mypop-ani-data="{bkani:{data:[{s:'设置内部动画效果',v:'0_bk_107202_bkani',c:'js_set_my_ani'}],def:'fadeInUp',type:'tag_select',title:'动画'}}" ></div>
+        <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+
+        <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+
+        <div style="display:none;" class="val_my_outline"  data-val="inneritemstd" ></div>
+        <!--bkoutstart-->
+        <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+            <h1><lhz   data-id="19327_bk_107202_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >加入我们，献出爱心</span></lhz></h1>
+            <p><lhz  style="display:none;" data-id="19327_bk_107202_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+        </div>
+        <!--bkoutend-->
+        <!--bkoutstart-->
+
+        <div id="bk_107202_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <!--blockname icon图标列表 blocknameend-->
+
+            <div class="container autopd-vt-big-bak  set_line_num"  data-now-lenm="3">
+                <div class="row inner_set_num" data-key="lpk" data-lp-num="4" data-lp-title="">
+                    <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                        <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                            <div style="text-align:center;">
+                                <div data-id="19327_bk_107202_btn51"  data-myscs-myiconst="iconweixin-copy" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweixin-copy 0 pubftsz80 pubbtnuucc "   style="color:rgb(0, 142, 87);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                            <h3 class="bk_ftcc">
+                                <lhz   data-id="19327_bk_107202_tt_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微信xxx</span></lhz>          </h3>
+                            <p class="bk_ftcc" style="padding-left:0px;">
+                                <lhz   data-id="19327_bk_107202_tt_dp1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >We Chat</span></lhz>          </p>
+                        </div>
+                    </div>
+                    <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                        <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                            <div style="text-align:center;">
+                                <div data-id="19327_bk_107202_btn52"  data-myscs-myiconst="iconqq" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconqq 0 pubftsz80 pubbtnuucc "   style="color:rgb(34, 174, 230);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                            <h3 class="bk_ftcc">
+                                <lhz   data-id="19327_bk_107202_tt_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQxxx</span></lhz>          </h3>
+                            <p class="bk_ftcc" style="padding-left:0px;">
+                                <lhz   data-id="19327_bk_107202_tt_dp2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >QQ</span></lhz>          </p>
+                        </div>
+                    </div>
+                    <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                        <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                            <div style="text-align:center;">
+                                <div data-id="19327_bk_107202_btn53"  data-myscs-myiconst="iconweibo" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconweibo 0 pubftsz80 pubbtnuucc "   style="color:rgb(215, 0, 64);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                            <h3 class="bk_ftcc">
+                                <lhz   data-id="19327_bk_107202_tt_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >微博xxx</span></lhz>          </h3>
+                            <p class="bk_ftcc" style="padding-left:0px;">
+                                <lhz   data-id="19327_bk_107202_tt_dp3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">MicroBlog</lhz>          </p>
+                        </div>
+                    </div>
+                    <div class="outitemstd  col-md-3 col-xs-12 autopadding15"  data-anim-obj ="0_bk_107202_bkani" data-kui-anim="fadeInUp" >
+                        <div style="background-color:#fff;" class="text-center cc_bgcc inner_myset_style inneritemstd">
+                            <div style="text-align:center;">
+                                <div data-id="19327_bk_107202_btn54"  data-myscs-myiconst="iconicon-douyin" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz80" data-myscs-cc_self="pubbtnuucc"   data-href='' data-btn-type="icon"  data-act="" class="pubcc js-my-btn-replace-set btn btn-default-my myiconfont  iconicon-douyin 0 pubftsz80 pubbtnuucc "   style="color:rgb(12, 12, 12);background-color:rgba(0, 0, 0, 0);">  </div>           </div>
+                            <h3 class="bk_ftcc">
+                                <lhz   data-id="19327_bk_107202_tt_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >抖音xxx</span></lhz>          </h3>
+                            <p class="bk_ftcc" style="padding-left:0px;">
+                                <lhz   data-id="19327_bk_107202_tt_dp4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">Tiktok</lhz>          </p>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>        </div>
+    </div>
+
+<link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css?31?31">
+<link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css?31">
+<script src="./js/baguetteBox.min.js"></script>
+<link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css?31">
+<script src="./js/swiper-bundle.min.js?31"></script>
+<script src="./js/jquery.nav.js?31"></script>
+<script src="./js/scrollanim.js?31"></script>
+<script src="./js/lazyload.min.js?31"></script>
+	    <script type='text/javascript' src='js/jquery.js'></script>
+		<script type='text/javascript' src='js/bootstrap.min.js'></script>
+	    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+	    <script type='text/javascript' src='js/swiper.min.js'></script>
+	    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+	    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+	    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+	    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+	    <script type='text/javascript' src='js/custom.js'></script>
+	    <script type='text/javascript' src='layer/layer.js'></script>
+        <script type='text/javascript' src='js/funcJs/base.js'></script>
+        <script type='text/javascript' src='js/funcJs/uploadFile.js'></script>
+        <script type='text/javascript' src='js/funcJs/index.js'></script>
+
+</html>
